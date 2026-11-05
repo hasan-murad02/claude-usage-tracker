@@ -1,0 +1,12 @@
+{
+  "name": "usage-tracker",
+  "description": "Sends anonymous Claude Code usage events (tokens, models, sessions, tools) to your own dashboard on Vercel.",
+  "version": "0.1.0",
+  "author": {
+    "name": "hasan-murad02"
+  },
+  "homepage": "https://github.com/hasan-murad02/claude-usage-tracker",
+  "repository": "https://github.com/hasan-murad02/claude-usage-tracker",
+  "license": "MIT",
+  "keywords": ["telemetry", "usage", "tokens", "dashboard", "analytics"]
+}

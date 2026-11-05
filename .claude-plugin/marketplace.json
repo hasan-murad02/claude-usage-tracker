@@ -1,0 +1,13 @@
+{
+  "name": "claude-usage-tracker",
+  "owner": {
+    "name": "hasan-murad02"
+  },
+  "plugins": [
+    {
+      "name": "usage-tracker",
+      "source": "./",
+      "description": "Sends Claude Code usage events (tokens, models, sessions, tools) to a Vercel-hosted dashboard."
+    }
+  ]
+}
