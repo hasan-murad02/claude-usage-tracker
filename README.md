@@ -7,7 +7,23 @@ Claude Code ──hooks──▶ hooks/track.mjs ──POST /api/ingest──▶
                                                                    └── dashboard (password protected)
 ```
 
-## Install the plugin (every session)
+## Install on a machine (one command)
+
+Plugins install per machine, so run this once on each one. Ask the dashboard owner for the ingest token.
+
+```powershell
+# Windows
+irm https://raw.githubusercontent.com/hasan-murad02/claude-usage-tracker/main/install.ps1 -OutFile install.ps1; .\install.ps1 -Token <TOKEN>
+```
+
+```bash
+# macOS / Linux
+curl -fsSLO https://raw.githubusercontent.com/hasan-murad02/claude-usage-tracker/main/install.sh && bash install.sh <TOKEN>
+```
+
+Both need the `claude` CLI on the PATH, and the shell script needs Node. They install at user scope and write the token to `~/.claude/usage-tracker/config.json`.
+
+## Install manually (every session)
 
 ```
 /plugin marketplace add hasan-murad02/claude-usage-tracker
