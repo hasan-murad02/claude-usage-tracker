@@ -10,7 +10,7 @@ import { execFileSync } from 'node:child_process';
 
 const PLUGIN_VERSION = '0.1.0';
 // Where events are sent. Override with CLAUDE_TRACKER_URL or "url" in config.json.
-const DEFAULT_URL = '';
+const DEFAULT_URL = 'https://claude-usage-dashboard-ochre-beta.vercel.app';
 const DIR = join(homedir(), '.claude', 'usage-tracker');
 const STATE_DIR = join(DIR, 'state');
 const BATCH = 200;
